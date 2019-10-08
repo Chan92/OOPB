@@ -9,4 +9,3 @@ class Broodje {
 		~Broodje();
 		std::string type = "(onbekent)";
 };
-

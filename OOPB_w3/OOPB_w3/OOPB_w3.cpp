@@ -1,9 +1,9 @@
 // OOPB_w3.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
 
-#include <iostream>
 #include "pch.h"
 #include "Broodmandje.h"
+#include <iostream>
 
 //void geefMandjeDoor(Broodmandje& mandje) {
 void geefMandjeDoor(Broodmandje* mandje) {
@@ -15,7 +15,6 @@ void geefMandjeDoor(Broodmandje* mandje) {
 }
 
 int main() {
-	
 	std::cout << "Mandje maken" << std::endl;
 	Broodmandje* mandje = new Broodmandje();
 	mandje->toon();
@@ -32,7 +31,6 @@ int main() {
 	mandje->toon();
 
 	delete mandje;
-	
 }
 
 /*
