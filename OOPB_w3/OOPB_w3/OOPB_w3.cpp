@@ -16,6 +16,38 @@ void geefMandjeDoor(Broodmandje* mandje) {
 
 int main() {
 	std::cout << "Mandje maken" << std::endl;
+	Broodmandje mandje1 = Broodmandje();
+	mandje1.toon();
+
+	std::cout << "---mandje1" << std::endl;
+	mandje1.voegToe("Kaisrbroodje");
+	mandje1.toon();
+
+	std::cout << "---mandje2" << std::endl;
+
+	//copy constructor
+	//Broodmandje mandje2 = mandje1;
+
+	//assigment oper
+	Broodmandje mandje2;
+	mandje2 = mandje1;
+
+
+	mandje2.toon();
+
+	mandje1.voegToe("Crosant");
+
+	std::cout << "---mandje1" << std::endl;
+	mandje1.toon();
+
+	std::cout << "---mandje2" << std::endl;
+	mandje2.toon();
+}
+
+
+/*
+int main() {
+	std::cout << "Mandje maken" << std::endl;
 	Broodmandje* mandje = new Broodmandje();
 	mandje->toon();
 
@@ -32,7 +64,7 @@ int main() {
 
 	delete mandje;
 }
-
+*/
 /*
 int main(){
 	std::cout << "Mandje maken" << std::endl;
